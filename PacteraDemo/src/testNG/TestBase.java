@@ -117,11 +117,6 @@ public abstract class TestBase {
 
 	}
 	
-	/**
-	 * to get the file name from annotation declared along with <b>@Test</b> for a method
-	 * @author Sachin
-	 * @return name of the file name
-	 */
 	private String getFileName(Method m){
 		TestInfo testInfo = (TestInfo)m.getAnnotation(TestInfo.class);
 		if(testInfo == null)
